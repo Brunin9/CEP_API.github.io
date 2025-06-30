@@ -1,78 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6f4ea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: #e8f5e9;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  color: #15ac40;
 }
 
-.container {
+#principal {
     background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #2e7d32;
-    text-align: center;
     width: 100%;
-    max-width: 400px;
-}
-
-.logo {
-    margin-bottom: 15px;
-}
-
-.logo img {
-    max-width: 100px;
-    height: auto;
+    max-width: 600px;
+    min-height: 90vh;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    border-top: 10px solid #2e7d32;
+    text-align: center;
+  }
+#principal img {
+  width: 130px;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 h1 {
-    margin-bottom: 20px;
-    color: #2e7d32;
+  font-size: 26px;
+  margin-bottom: 30px;
 }
 
-input {
-    padding: 10px;
-    width: 80%;
-    font-size: 16px;
-    margin-right: 5px;
-    border-radius: 4px;
-    border: 1px solid #2e7d32;
-    outline: none;
-    color: #2e7d32;
+h2 {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #2e7d32;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #1b5e20;
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
 }
 
-.resultado {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #e6f4ea;
-    border-radius: 8px;
-    display: none;
-    color: #2e7d32;
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s, background-color 0.2s;
+  color: #e8f5e9; 
 }
 
-.resultado p {
-    margin-bottom: 8px;
+input[type="text"]:focus {
+  outline: none;
+  border-color: #e6f4ea;
+  background-color: #f1f8e9;
+}
+
+.error {
+  color: #e8f5e9; /* mensagem de erro também invisível */
+  background-color: #e8f5e9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  display: none;
 }

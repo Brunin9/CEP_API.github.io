@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultar CEP</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consulta de CEP</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <h1>Consultar CEP</h1>
-        <form id="cep-form">
-            <input type="text" id="cep" placeholder="Digite o CEP" maxlength="8" required>
-            <button type="submit">Buscar</button>
-        </form>
-        <div id="resultado" class="resultado"></div>
+  <div id="principal">
+
+    <img src="logo.webp" alt="Logo do site" />
+
+    <h1>Consultar CEP</h1>
+
+    <div id="erro" class="error"></div>
+
+    <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" maxlength="8" placeholder="Ex: 01001000" />
     </div>
 
-    <script src="script.js"></script>
+    <div class="form-group">
+      <label for="logradouro">Logradouro</label>
+      <input type="text" id="logradouro" readonly />
+    </div>
+    <div class="form-group">
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" readonly />
+    </div>
+    <div class="form-group">
+      <label for="localidade">Cidade</label>
+      <input type="text" id="localidade" readonly />
+    </div>
+    <div class="form-group">
+      <label for="uf">UF</label>
+      <input type="text" id="uf" readonly />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
