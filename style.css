@@ -60,7 +60,7 @@ input[type="text"] {
   border-radius: 6px;
   font-size: 15px;
   transition: border 0.2s, background-color 0.2s;
-  color: #e8f5e9; 
+  color: #000000; 
 }
 
 input[type="text"]:focus {
@@ -70,7 +70,7 @@ input[type="text"]:focus {
 }
 
 .error {
-  color: #e8f5e9; /* mensagem de erro também invisível */
+  color: #131413;
   background-color: #e8f5e9;
   padding: 10px;
   margin-top: 10px;
