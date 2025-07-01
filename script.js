@@ -94,7 +94,6 @@ function renderizarDados() {
     listaDados.appendChild(li);
   });
 
-  // Adiciona evento aos botões "Excluir"
   document.querySelectorAll('.excluir').forEach(button => {
     button.addEventListener('click', (e) => {
       const index = e.target.getAttribute('data-index');
@@ -105,11 +104,10 @@ function renderizarDados() {
 
 function excluirItem(index) {
   const dados = JSON.parse(localStorage.getItem('dadosCep')) || [];
-  dados.splice(index, 1); // remove o item pelo índice
+  dados.splice(index, 1);
   localStorage.setItem('dadosCep', JSON.stringify(dados));
-  renderizarDados(); // atualiza a lista
+  renderizarDados(); 
 }
 
 
-// Carrega dados salvos ao iniciar
 renderizarDados();
